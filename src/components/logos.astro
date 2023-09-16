@@ -1,0 +1,41 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+import { Picture } from "@astrojs/image/components";
+import Link from "@components/ui/link.astro";
+import openlibrary from "assets/openlibrary.svg";
+import ndl from "assets/ndl.png";
+import annasArchive from "assets/annas-archive.png";
+---
+
+<div class="mt-24">
+  <h2 class="text-center text-slate-500">Thanks</h2>
+  <div class="flex gap-3 md:gap-10 items-center justify-center my-10 flex-wrap">
+    <Link href="https://openlibrary.org" class="bg-white" style="inverted">
+      <Picture
+        src={openlibrary}
+        alt="Open Library"
+        sizes="(max-width: 200px) 100vw, 200px"
+        widths={[200, 400]}
+        position="center"
+      />
+    </Link>
+    <Link href="https://www.ndl.go.jp" class="bg-white pt-3.5" style="inverted">
+      <Picture
+        src={ndl}
+        alt="National Diet Library, Japan"
+        sizes="(max-width: 200px) 100vw, 200px"
+        widths={[200, 400]}
+        position="center"
+      />
+    </Link>
+    <Link href="https://annas-blog.org/" class="bg-white   font-semibold  " style="inverted">
+      Anna’s Archive
+    </Link>
+  </div>
+  <!-- <h2 class="text-center text-slate-500">Patron</h2>
+  <div class="flex gap-8 md:gap-20 items-center justify-center my-10 flex-wrap">
+    <Icon class="h-8 md:h-12" name="simple-icons:react" />
+    <Icon class="h-8 md:h-12" name="simple-icons:svelte" />
+  </div> -->
+</div>

@@ -1,0 +1,58 @@
+---
+import { Icon } from "astro-icon";
+import Link from "@components/ui/link.astro";
+---
+
+<footer class="my-20">
+  <p class="text-center text-sm text-slate-500">
+    Copyright © {new Date().getFullYear()} Khaos Library. All rights reserved.
+  </p>
+  <div class="flex gap-6 items-center justify-center my-2 flex-wrap">
+  <Link
+    size="lg"
+    style="inverted"
+    rel="noopener"
+    href="https://github.com/khaoslibrary-org/KhaosLibrary"
+    target="_blank">
+    <Icon class="text-black w-5 h-5" name="bx:bxl-github" />
+  </Link>
+  <Link
+    size="lg"
+    style="inverted"
+    rel="noopener"
+    href="https://codeberg.org/KhaosLibrary/KhaosLibrary"
+    target="_blank">
+    <Icon class="text-black w-4 h-4" name="simple-icons:codeberg" />
+  </Link>
+  <Link
+  size="lg"
+  style="inverted"
+  rel="noopener"
+  href="https://nya.one/@rei"
+  target="_blank">
+  <Icon class="text-black w-5 h-5" name="mdi:mastodon" />
+  <Link
+  size="lg"
+  style="inverted"
+  rel="noopener"
+  href="https://matrix.to/#/#khaoslibrary:tedomum.net"
+  target="_blank">
+  <Icon class="text-black w-5 h-5" name="simple-icons:matrix" />
+</Link>
+</div>
+
+<!--
+    Can we ask you a favor 🙏
+    Please keep this backlink on your website if possible.
+    or Purchase a commercial license from https://web3templates.com
+  -->
+<p class="text-center text-xs text-slate-500 mt-1">
+  Made by <a
+    href="https://web3templates.com"
+    target="_blank"
+    rel="noopener"
+    class="hover:underline">
+    Web3Templates
+  </a>
+</p>
+</footer>

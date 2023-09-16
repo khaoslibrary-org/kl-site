@@ -1,0 +1,64 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Decentralized",
+    description:
+      "Not just blockchain, but also a decentralised method of collaboration based on fediverse and open APIs.",
+    icon: "carbon:network-4",
+  },
+  {
+    title: "Most comprehensive data",
+    description:
+      "Most data-rich and professional on-chain metadata database and library.",
+    icon: "bx:bxs-data",
+  },
+  {
+    title: "Open",
+    description:
+      "Anyone can browse, download, contribute to, and reuse for absolutely free. ",
+    icon: "icon-park-outline:open",
+  },
+  {
+    title: "Linking",
+    description:
+      "Use of the json-ld (Linked Data) format makes it easier to be compatible with traditional libraries and easier to be used by modern systems.",
+    icon: "carbon:network-3",
+  },
+  {
+    title: "Permanent storage",
+    description:
+      "Permanent storage on blockchain.",
+    icon: "mdi:cube-outline",
+  }
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    For  Creative Works  Never  To  Be  Forgotten
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Currently, I have over 40 million bibliographic records and millions of film records , which I'm integrating and correcting as I upload them to the permanent  Arweave blockchain.
+    <br />
+    Music, Games and other human creations's metadata will be completed  in the future.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
